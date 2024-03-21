@@ -1,0 +1,548 @@
+body {
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	display: flex;
+	font-family: "Roboto", sans-serif;
+	background-color: rgba(8, 8, 8, 0.89);
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	align-self: center;
+	width: 100%;
+	height: 50px;
+	min-height: 100px;
+	background-color: transparent;
+	margin: auto;
+}
+
+.navButton label select {
+	background-color: transparent;
+	color: white;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 7px 17px;
+	margin-right: 1rem;
+}
+
+.navButton label select option {
+	color: black;
+}
+
+.navButton button {
+	background-color: red;
+	color: white;
+	width: 80px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-right: 10rem;
+	padding: 7px 17px;
+	border-style: none;
+}
+
+.navButton button:hover {
+	cursor: pointer;
+	background-color: hsl(7, 100%, 30%);
+}
+
+.logo img {
+	width: 180px;
+	margin-left: 5vw;
+	margin-top: 0.5rem;
+}
+
+.home-content {
+	width: 100%;
+	margin-top: -100px;
+	background-size: cover;
+	align-items: center;
+	overflow-x: hidden;
+	justify-content: center;
+	display: flex;
+	background-position: center;
+	min-height: 710px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url(/images/background.jpg);
+}
+
+.firstContent {
+	flex-direction: column;
+	display: inline-flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.firstContent h1 {
+	margin: 0;
+	font-size: 3rem;
+	font-weight: 900;
+	color: white;
+}
+
+.firstContent .p1 {
+	margin: 25px;
+	font-size: 2rem;
+	color: white;
+}
+
+.firstContent .p2 {
+	margin: 0;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.search {
+	display: flex;
+	height: 60px;
+	margin: 25px;
+	align-content: space-between;
+	align-items: center;
+	justify-content: center;
+}
+
+.search input {
+	width: 450px;
+	border-radius: 10px;
+	height: 86%;
+	border-color: white;
+	background: rgba(38, 88, 174, 0.178);
+	color: white;
+	font-size: larger;
+	margin: 10px;
+}
+
+.search input::placeholder {
+	color: white;
+}
+
+.search button {
+	width: 200px;
+	border-radius: 10px;
+	height: 100%;
+	background: red;
+	color: white;
+	font-size: x-large;
+	border-style: none;
+}
+
+.search button:hover {
+	cursor: pointer;
+	background-color: hsl(7, 100%, 30%);
+}
+
+.home-content1 {
+	display: flex;
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	align-items: center;
+	flex-direction: row;
+	position: static;
+	margin-top: 10px;
+}
+
+/* Styles for the image section */
+.home-content1 .image {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+/* Styles for the text section */
+.home-content1 .text {
+	font-size: larger;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	color: white;
+}
+
+.home-content1 .text h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	margin-left: 25%;
+	margin-bottom: 0;
+}
+
+.home-content1 .text p {
+	margin-top: 10px;
+	font-size: 1.5rem;
+	margin-left: 25%;
+}
+
+/*HOME CONTENT AREA 2*/
+.home-content2 {
+	display: flex;
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	align-items: center;
+	flex-direction: row;
+	position: static;
+	margin-top: 10px;
+}
+
+/* Styles for the image section */
+.home-content2 .image {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	width: 50%;
+	background-color: rgb(0, 0, 0);
+}
+
+.home-content2 .image .containerAnim {
+	height: 120px;
+	width: 400px;
+	bottom: 10%;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	border-radius: 10px;
+	border-color: white;
+	border-style: solid;
+	padding: 10px;
+	display: flex;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+.home-content2 .image .containerAnim .boxShot {
+	position: relative;
+	height: 100%;
+}
+
+.containerAnim p {
+	position: relative;
+	color: white;
+	position: relative;
+	top: 20%;
+}
+
+.containerAnim p i {
+	color: rgb(89, 0, 255);
+	font-style: normal;
+}
+
+.containerAnim .circle img {
+	width: 50px;
+	border-radius: 50%;
+	position: relative;
+	top: 30%;
+	left: 3%;
+}
+
+/* Styles for the text section */
+.home-content2 .text {
+	font-size: larger;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	color: white;
+}
+
+.home-content2 .text h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 0;
+	margin-right: 20%;
+}
+
+.home-content2 .text p {
+	margin-top: 10px;
+	font-size: 1.8rem;
+	margin-right: 20%;
+}
+
+/*HOME CONTENT 3*/
+.home-content3 {
+	display: flex;
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	align-items: center;
+	flex-direction: row;
+	position: static;
+	margin-top: 10px;
+}
+
+/* Styles for the image section */
+.home-content3 .image {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+/* Styles for the text section */
+.home-content3 .text {
+	font-size: larger;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	color: white;
+}
+
+.home-content3 .text h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	margin-left: 25%;
+	margin-bottom: 0;
+}
+
+.home-content3 .text p {
+	margin-top: 10px;
+	font-size: 1.5rem;
+	margin-left: 25%;
+}
+/*END OF HOME CONTENT 3*/
+
+/*START OF CONTENT 4*/
+.home-content4 {
+	display: flex;
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	align-items: center;
+	flex-direction: row;
+	position: static;
+	margin-top: 10px;
+}
+
+/* Styles for the image section */
+.home-content4 .image {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	width: 50%;
+	background-color: rgb(0, 0, 0);
+}
+
+/* Styles for the text section */
+.home-content4 .text {
+	font-size: larger;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	color: white;
+}
+
+.home-content4 .text h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 0;
+	margin-right: 20%;
+}
+
+.home-content4 .text p {
+	margin-top: 10px;
+	font-size: 1.8rem;
+	margin-right: 20%;
+}
+/*END OF HOME CONTENT 4*/
+
+/*FAQ AREA*/
+.question {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin-top: 10px;
+}
+.question h1 {
+	font-weight: 800;
+	font-size: 3rem;
+}
+
+.question .quest {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	max-width: 1000px;
+	height: 80px;
+	background-color: hsl(0, 0%, 20%);
+	margin: 5px;
+}
+
+.dropContent {
+	width: 1000px;
+	background-color: red;
+	height: 300px;
+	position: absolute;
+}
+
+.dropContent {
+	display: none;
+}
+
+.quest:focus {
+	display: absolute;
+}
+
+.bx {
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	margin: 30px;
+}
+
+.question .quest:hover {
+	background-color: hsl(0, 0%, 25%);
+	cursor: pointer;
+}
+
+.question .quest .textbox {
+	color: white;
+	font-size: 1.5rem;
+	margin: 30px;
+}
+
+/* Media query for smaller screens (adjust as needed) */
+@media screen and (max-width: 768px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navbar {
+		flex-direction: row;
+		margin-left: 0;
+		/* Adjusted for better spacing */ /* Add padding for smaller screens */
+	}
+
+	.logo img {
+		width: 100%; /* Full width of the parent container */
+		max-width: 180px; /* Maximum width to maintain the design */
+		margin-top: 0.5rem;
+		margin-left: 0.5rem; /* Reset left margin for smaller screens */
+	}
+
+	.firstContent {
+		width: 100%;
+	}
+
+	.navButton button {
+		margin-right: 0.5rem; /* Reset right margin for smaller screens */
+	}
+
+	.home-content1 {
+		flex-direction: column;
+		margin-bottom: 90px;
+		height: 700px;
+	}
+	.home-content1 .image,
+	.home-content1 .text {
+		width: 100%;
+	}
+	.home-content1 .text p,
+	.home-content1 .text h1 {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	/*responsive for HOME CONTENT AREA 2*/
+	.home-content2 {
+		flex-direction: column-reverse;
+		margin-top: 0;
+	}
+
+	.home-content2 .text {
+		width: 100%;
+		background-color: rgb(0, 0, 0);
+	}
+
+	.home-content2 .text p,
+	.home-content2 .text h1 {
+		width: 100%;
+		margin-left: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	.home-content2 .image {
+	}
+
+	.home-content3 .text {
+		display: flex;
+		background-color: rgb(0, 0, 0);
+		padding: 30px;
+		width: 100%;
+	}
+
+	/*area 3*/
+	.home-content3 .text p,
+	.home-content3 .text h1 {
+		margin: 0;
+		text-align: center;
+	}
+
+	.home-content3 .text h1 {
+		font-size: 1.8em;
+		margin: 20px;
+	}
+
+	.home-content3 .text p {
+		font-size: 1em;
+	}
+
+	/*area 4*/
+	.home-content4 {
+		flex-direction: column-reverse;
+		margin-top: 0;
+	}
+
+	.home-content4 .text {
+		width: 100%;
+		background-color: rgb(0, 0, 0);
+	}
+
+	.home-content4 .text p,
+	.home-content4 .text h1 {
+		width: 100%;
+		margin-left: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	.home-content4 .image {
+	}
+
+	.home-content4 .text {
+		display: flex;
+		background-color: rgb(0, 0, 0);
+		padding: 30px;
+		width: 100%;
+	}
+
+	.home-content4 .text h1 {
+		font-size: 1.8em;
+		margin: 10px;
+	}
+
+	.home-content4 .text p {
+		font-size: 1em;
+		margin: 10px;
+	}
+}
