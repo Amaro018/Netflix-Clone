@@ -391,15 +391,72 @@ body {
 	position: absolute;
 }
 
+/*DROP DOWN NOT FINISH */
 .dropContent {
 	display: none;
 }
+/*END OF DROP DOWN CODE*/
 
-.quest:focus {
-	display: absolute;
+.paragraphLast h4 {
+	font-size: 1.3rem;
+	margin: 10px;
+	margin-top: 40px;
 }
 
-.bx {
+.search1 {
+	display: flex;
+	width: 600px;
+	height: 60px;
+	margin: 25px;
+	align-content: center;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.search1 .emailAdd {
+	width: 400px;
+	height: 89%;
+	border-radius: 10px;
+	border-color: white;
+	background: rgba(38, 88, 174, 0.178);
+}
+
+.search1 .emailAdd::placeholder {
+	color: white;
+	padding-left: 20px;
+}
+
+.try1 {
+	margin-left: 20px;
+	color: white;
+	border-radius: 5px;
+	width: 200px;
+	background-color: rgb(255, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.try1:hover {
+	cursor: pointer;
+	background-color: hsl(7, 100%, 30%);
+}
+
+.getStart {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.getStart h4 {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+.getStart .bx {
+	font-size: 1.8rem;
+}
+
+.quest .bx {
 	width: 30px;
 	height: 30px;
 	font-size: 30px;
@@ -417,11 +474,78 @@ body {
 	margin: 30px;
 }
 
+/*FOOTER  AREA */
+.footer {
+	display: flex;
+	margin-top: 10px;
+	background-color: black;
+	width: 100%;
+	height: 500px;
+}
+
+.footercon {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	color: white;
+	margin-top: 100px;
+}
+
+.flex1 {
+	display: flex;
+	position: absolute;
+	height: 30px;
+	width: 200px;
+	margin-left: 140px;
+	margin-bottom: 20px;
+	align-items: center;
+}
+
+.flex1 h5 a {
+	font-style: none;
+	color: rgb(188, 185, 185);
+	font-size: 15px;
+	justify-content: center;
+}
+
+.list1 li {
+	margin: 20px;
+	margin-left: 100px;
+	list-style: none;
+}
+
+.list1 li a {
+	color: rgb(188, 185, 185);
+	font-style: none;
+	font-size: smaller;
+}
+.end {
+	margin: 0;
+	position: absolute;
+	height: 100px;
+	margin-left: 140px;
+	margin-top: 330px;
+	color: rgb(188, 185, 185);
+}
+
+.end label select {
+	background-color: transparent;
+	color: white;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 7px 17px;
+	margin-right: 1rem;
+}
+
 /* Media query for smaller screens (adjust as needed) */
 @media screen and (max-width: 768px) {
 	body {
 		display: flex;
 		flex-direction: column;
+		overflow-x: hidden;
 	}
 
 	.navbar {
@@ -481,9 +605,6 @@ body {
 		text-align: center;
 	}
 
-	.home-content2 .image {
-	}
-
 	.home-content3 .text {
 		display: flex;
 		background-color: rgb(0, 0, 0);
@@ -526,9 +647,6 @@ body {
 		text-align: center;
 	}
 
-	.home-content4 .image {
-	}
-
 	.home-content4 .text {
 		display: flex;
 		background-color: rgb(0, 0, 0);
@@ -544,5 +662,69 @@ body {
 	.home-content4 .text p {
 		font-size: 1em;
 		margin: 10px;
+	}
+
+	/*FAQ responsive*/
+	.question {
+		align-content: center;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.question h1 {
+		text-align: center;
+		font-size: 1.8em;
+		margin-top: 2em;
+	}
+
+	.question .quest {
+		width: 90%;
+	}
+
+	.paragraphLast {
+		justify-items: center;
+	}
+
+	.paragraphLast h4 {
+		width: 80%;
+		margin-left: 10%;
+		text-align: center;
+		font-size: 1em;
+	}
+
+	.search1 {
+		width: 80%;
+	}
+
+	.getStart h4 {
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+
+	.getStart .bx {
+		font-size: 1.8em;
+	}
+
+	/*FOOTER*/
+	.footer {
+		margin: 0;
+		background-color: black;
+	}
+	.footercon {
+		background-color: rgb(0, 0, 0);
+		width: 100%;
+		margin: 0;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.flex1 {
+		margin: 0;
+	}
+
+	.footercon .list1 {
+		background-color: rgb(0, 0, 0);
+		margin: 0;
 	}
 }
